@@ -1,0 +1,6 @@
+tetiana_cherevan: Tetiana Cherevan
+subscribe:
+  title: Subscribe
+  popover-head: Enter your email address
+  invalid_email: Invalid email
+  success_subscribed: Your email was subscribed!

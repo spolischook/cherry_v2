@@ -1,0 +1,25 @@
+<a
+        class="text-muted"
+        href="#"
+        id="js-subscribe-link"
+        data-placement="bottom"
+>
+    {{ 'subscribe.title'|trans }}
+</a>
+<div id="popover-head" style="display: none">
+    {{ 'subscribe.popover-head'|trans }}
+</div>
+<div id="popover-content" style="display: none">
+    <form>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control subscriber-email" placeholder="Email" aria-label="Email">
+            <div class="input-group-append">
+                <button type="button" class="subscribe-button input-group-text btn btn-outline-secondary">
+                    <svg height="32" class="octicon octicon-mail" viewBox="0 0 14 16" version="1.1" width="28" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M0 4v8c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1H1c-.55 0-1 .45-1 1zm13 0L7 9 1 4h12zM1 5.5l4 3-4 3v-6zM2 12l3.5-3L7 10.5 8.5 9l3.5 3H2zm11-.5l-4-3 4-3v6z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </form>
+</div>

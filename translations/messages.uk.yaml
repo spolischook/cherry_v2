@@ -1,0 +1,6 @@
+tetiana_cherevan: Тетяна Черевань
+subscribe:
+  title: Підписатись на оновлення
+  popover-head: Введіть свою електронну пошту
+  invalid_email: Виглядає як неправильна адреса :(
+  success_subscribed: Ви підписалися на онвлення! Чекайте листів!
