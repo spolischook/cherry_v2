@@ -1,0 +1,4 @@
+welp_mailchimp:
+    api_key: '%env(CHERRY_MAILCHIMP_API_KEY)%'
+    lists:
+        a8e6f854bb: ~

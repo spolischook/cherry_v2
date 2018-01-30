@@ -1,0 +1,42 @@
+<header class="blog-header py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+        <div class="col-3 pt-1">
+            {% import 'subscribe.html.twig' %}
+        </div>
+        <div class="col-6 text-center">
+            <a
+                    class="blog-header-logo text-dark"
+                    href="{{ path('index') }}">
+                {{ 'tetiana_cherevan'|trans }}
+            </a>
+        </div>
+        <div class="col-3 d-flex justify-content-end align-items-center">
+            <a class="text-muted" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-3">
+                    <circle cx="10.5" cy="10.5" r="7.5"></circle>
+                    <line x1="21" y1="21" x2="15.8" y2="15.8"></line>
+                </svg>
+            </a>
+            <a href="{{ path('index', {_locale: 'uk'}) }}">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="15" class="mx-1">
+                    <rect width="30" height="15" fill="#005BBB"></rect>
+                    <rect width="30" height="15" y="7.5" fill="#FFD500"></rect>
+                </svg>
+            </a>
+            <a class="active" href="{{ path('index', {_locale: 'us'}) }}">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="30" height="15" class="mx-1">
+                    <clipPath id="t">
+                        <path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"></path>
+                    </clipPath>
+                    <path d="M0,0 v30 h60 v-30 z" fill="#00247d"></path>
+                    <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"></path>
+                    <path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t)" stroke="#cf142b" stroke-width="4"></path>
+                    <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"></path>
+                    <path d="M30,0 v30 M0,15 h60" stroke="#cf142b" stroke-width="6"></path>
+                </svg>
+            </a>
+        </div>
+    </div>
+</header>

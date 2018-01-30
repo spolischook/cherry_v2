@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="{{ app.request.locale }}">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="robots" content="noindex">
+    <link href="{{ asset('favicon.ico') }}" rel="shortcut icon" type="image/x-icon">
+    {% block stylesheets %}
+        <link rel="stylesheet" href="{{ asset('build/main.css') }}">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+    {% endblock %}
+    <title>Tetiana Cherevan Art Gallery</title>
+</head>
+<body>
+{% block body %}
+    <main class="container">
+        {% block flash_messages %}
+            <div id="flash-messages"></div>
+        {% endblock %}
+        {% block header %}
+            {% include 'components/header.html.twig' %}
+        {% endblock %}
+        {% block container %}
+
+        {% endblock %}
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">© 2005-{{ "now"|date("Y") }} {{ 'tetiana_cherevan'|trans }}</span>
+        </div>
+    </footer>
+{% endblock %}
+{% block javascript %}
+    <script src="{{ asset('build/manifest.js') }}"></script>
+    <script src="{{ asset('build/main.js') }}"></script>
+{% endblock %}
+</body>
+</html>
